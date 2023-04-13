@@ -8,18 +8,23 @@
     <link rel="stylesheet" href="components/loader.css">
     <link rel="stylesheet" href="css/style.css">
     <script>
+        function cadastrar() {
 var nomes = []
 var nomeinserido
+
 nomeinserido = document.getElementById('insertnome').value
+nomes.push(nomeinserido)
+alert(nomes[0])
 
-
+}
     </script>
+
 </head>
 <body>
+    <br>
 	
-    <input type="text" placehoolder="Insira o nome 
-    aqui" id="insert nome">
-    <input  type="button" value="CADASTRAR">
+    <input type="text" placeholder="Insira o nome aqui" id="insertnome"> 
+    <input  type="button" value="CADASTRAR" onclick="cadastrar()">
     <h1 id="exibirnome"></h1>
 
 
